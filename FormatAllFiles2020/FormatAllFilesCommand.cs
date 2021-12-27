@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using EnvDTE;
 using EnvDTE80;
+using FormatAllFiles2020;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
 
@@ -27,7 +28,7 @@ namespace FormatAllFiles
         /// <summary>
         /// 出力ウィンドウの表示領域です。
         /// </summary>
-        private OutputWindow _outputWindow = new OutputWindow(FormatAllFilesPackage.PackageName);
+        private OutputWindow _outputWindow = new OutputWindow(FormatAllFiles2020Package.PackageName);
 
         /// <summary>
         /// シングルトンのインスタンスを取得します。
@@ -56,7 +57,7 @@ namespace FormatAllFiles
         {
             var dte = (DTE2)ServiceProvider.GetService(typeof(DTE));
 
-            var option = ((FormatAllFilesPackage)Package).GetGeneralOption();
+            var option = ((FormatAllFiles2020Package)Package).GetGeneralOption();
             var fileFilter = option.CreateFileFilter();
 
             var targetItems = GetSelectedProjectItems(dte.ToolWindows.SolutionExplorer, option.CreateHierarchyFilter())

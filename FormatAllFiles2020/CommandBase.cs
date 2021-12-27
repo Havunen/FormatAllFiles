@@ -42,7 +42,7 @@ namespace FormatAllFiles
 
             Package = package;
 
-            var commandService = ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
+            IMenuCommandService commandService = (IMenuCommandService)ServiceProvider.GetService(typeof(IMenuCommandService));
             if (commandService != null)
             {
                 var menuCommandID = new CommandID(commandSetId, commandId);
