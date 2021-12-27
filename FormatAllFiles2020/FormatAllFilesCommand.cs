@@ -23,7 +23,7 @@ namespace FormatAllFiles
         /// <summary>
         /// コマンドメニューグループのIDです。
         /// </summary>
-        public static readonly Guid CommandSet = new Guid("b9f80962-1b6d-4cfb-bcd8-bd51f716e103");
+        public static readonly Guid CommandSet = new Guid("b9f80962-1b6d-4cfb-bcd8-bd51f716e104");
 
         /// <summary>
         /// 出力ウィンドウの表示領域です。

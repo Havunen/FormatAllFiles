@@ -86,10 +86,10 @@
 
   <Symbols>
     <!-- This is the package guid. -->
-    <GuidSymbol name="guidFormatAllFilesPackage" value="{78f3c948-c9f1-4387-8fa6-7177d99b483b}" />
+    <GuidSymbol name="guidFormatAllFilesPackage" value="{58df8013-f2ed-420e-bd20-7d4516666ed5}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidFormatAllFilesPackageCmdSet" value="{b9f80962-1b6d-4cfb-bcd8-bd51f716e103}">
+    <GuidSymbol name="guidFormatAllFilesPackageCmdSet" value="{b9f80962-1b6d-4cfb-bcd8-bd51f716e104}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
       <IDSymbol name="FormatAllFilesCommandId" value="0x0100" />
     </GuidSymbol>
