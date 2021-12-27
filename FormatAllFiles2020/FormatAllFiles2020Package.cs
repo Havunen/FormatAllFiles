@@ -26,7 +26,11 @@ namespace FormatAllFiles2020
     /// </para>
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true)]
-    [Guid(FormatAllFiles2020Package.PackageGuidString)]
+    [InstalledProductRegistration("#110", "#112", "1.4", IconResourceID = 400)] // Info on this package for Help/About
+    [Guid(PackageGuidString)]
+    [ProvideMenuResource("Menus.ctmenu", 1)]
+    [ProvideOptionPage(typeof(GeneralOptionPage), PackageName, "General", 100, 101, true)]
+    [ProvideProfile(typeof(GeneralOptionPage), PackageName, "General", 110, 110, true)]
     public sealed class FormatAllFiles2020Package : Package
     {
         public const string PackageName = "Format All Files 2020";
